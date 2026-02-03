@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="628.0" style="-fx-background-color: #4b4949;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="47.0" layoutY="75.0" text="Про програму" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <Label layoutX="37.0" layoutY="466.0" text="AutoTestingFramework - програмне забезпечення, що&#10;реалізує функціонал автоматичного тестування веб-&#10;сайтів із можливістю створювати власні тестові сценарії&#10;та використовувати базові, також дозволяє формувати&#10;звіти про проведене тестування." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="281.0" text="Розробник: Захарчук М.Д..&#10;Група: 2ПІ-20б" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="373.0" text="Програмне забезпечення поширюється на безкоштовній &#10;основі та має відкритий код." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="649.0" text="Версія програмного забезпечення: 1.0.45" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="197.0" text="AutoTestingFramework - програмне забезпечення для&#10;автоматизованого тестування веб-додатків " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="459.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autotestingframework.GreetingController">
+   <stylesheets>
+      <URL value="@style.css" /> <!-- Додайте шлях до вашого CSS файлу -->
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="738.0" fitWidth="1683.0" layoutX="-265.0" layoutY="-5.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg_greating.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="71.0" lineSpacing="2.0" prefHeight="150.0" prefWidth="1231.0" text="Вас вітає програмне забезпечення &#10;для автоматизованого тестування веб-додатків" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="56.0" />
+         </font>
+      </Label>
+      <Button layoutX="1091.0" layoutY="562.0" mnemonicParsing="false" onAction="#showAbout" text="Про програму" />
+      <Button layoutX="87.0" layoutY="560.0" mnemonicParsing="false" onAction="#showInstruction" prefHeight="66.0" prefWidth="214.0" text="Довідка" />
+      <Button fx:id="button" layoutX="543.0" layoutY="550.0" mnemonicParsing="false" onAction="#start" prefHeight="102.0" prefWidth="355.0" text="Почати роботу" />
+   </children>
+</AnchorPane>

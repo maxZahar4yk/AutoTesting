@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="autotestingframework.MainEnvController">
+   <children>
+      <MenuBar layoutX="-6.0" layoutY="-6.0" prefHeight="50.0" prefWidth="1410.0" style="-fx-font-size: 25px; -fx-background-color: darkgray;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#saveReport" text="Зберегти звіт" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#openReport" text="Відкрити звіт" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Редагувати">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#startTesting" text="Запустити тестування" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#generateReport" text="Згенерувати звіт" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Допомога">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="Про програму" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#showInstruction" text="Довідка" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="fileListView" layoutX="25.0" layoutY="337.0" prefHeight="300.0" prefWidth="550.0" />
+      <ListView fx:id="movedFilesListView" layoutX="824.0" layoutY="347.0" prefHeight="286.0" prefWidth="547.0" />
+      <Button fx:id="moveRightButton" layoutX="591.0" layoutY="390.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="213.0" text="--&gt;" />
+      <Button fx:id="moveLeftButton" layoutX="593.0" layoutY="519.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="213.0" text="&lt;--" />
+      <Label layoutX="76.0" layoutY="274.0" text="Доступні сценарії тестування">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="905.0" layoutY="270.0" text="Обрані сценарії для тестування">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progress" layoutX="-5.0" layoutY="646.0" prefHeight="55.0" prefWidth="1410.0" progress="0.0" />
+      <Label layoutX="204.0" layoutY="149.0" text="Посилання на сайт: ">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="siteURL" layoutX="523.0" layoutY="143.0" prefHeight="63.0" prefWidth="460.0" />
+   </children>
+</AnchorPane>

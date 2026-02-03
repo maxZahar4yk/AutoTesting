@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="628.0" style="-fx-background-color: #4b4949;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="35.0" layoutY="60.0" text="Довідка користувача" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font></Label>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="455.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@icon.png" />
+            </image>
+        </ImageView>
+      <TextArea layoutX="28.0" layoutY="183.0" prefHeight="468.0" prefWidth="574.0" text="Функції:&#10;- створення тестових сценарії: можливість створення сценаріїв тестування&#10;  веб-додатків за допомогою зручного конструктора.&#10;- використання доступний сценаріїв тестування: використання доступних&#10;   сценаріїв тестування.&#10;- проведення тестування: використання сценаріїв тестування, разом з їх &#10;   візуалізацією для тестування веб-додатку.&#10;- перегляд звіту про проведене тестування: перегляд результату тестування&#10;  з детальною інформацію про кожний сценарій, з можливістю автоматич-&#10;  ного генерування діаграм та результуючих test-cases.&#10;- експортування звіту: можливість експортування створеного звіту.&#10;&#10;Допомога користувачам:&#10;При виникненні додаткових питань чи пропозицій із покращення функцій&#10;програмного забезпечення, будь-ласка, звертайтесь до служби підтримки&#10;за електронної адресою: helpTestingAutomation@gmail.com&#10;&#10;&#10;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>
